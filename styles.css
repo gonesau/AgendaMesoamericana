@@ -35,6 +35,7 @@ body {
   .mapa {
     width: 50%; /* El mapa utiliza el 50% del ancho del contenedor */
     box-sizing: border-box;
+    justify-content: center; /* Centrado verticalmente */
   }
   
   .titulo_eje,
@@ -93,6 +94,24 @@ body {
   }
   
 
+  /* Media query para pantallas móviles */
+@media only screen and (max-width: 900px) {
+  .agenda_meso {
+    flex-direction: column;
+  }
+
+  #cuadro_socioambiental,
+  #cuadro_economico,
+  .mapa {
+    width: 100%; /* Utiliza el 100% del ancho en pantallas pequeñas */
+  }
+
+  #cuadro_socioambiental,
+  #cuadro_economico {
+    border-right: none; /* Elimina los bordes en móviles */
+    border-left: none;
+  }
+}
 
 
 
