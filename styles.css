@@ -5,14 +5,16 @@ body {
   }
   
 
-
-  #texto_intro{
-    font-size: 1em;
-    font-weight: bold;
-    color: #000000;
-    text-align: center;
-    padding: 10px;
+  .parrafo_intro {
+    width: 95%;
+    margin: 0 auto; /* Centra horizontalmente */
   }
+  
+  #texto_intro {
+    text-align: justify;
+    font-weight:normal;
+  }
+
   .main_container {
     text-align: center;
   }
@@ -54,19 +56,20 @@ body {
   
   #cuadro_socioambiental {
     margin-right: 5px;
+    border-right: 1px solid #ccc;
   }
   
   #cuadro_economico {
     margin-left: 5px;
+    border-left: 1px solid #ccc;
   }
   
   #cuadro_socioambiental,
   #cuadro_economico,
   .mapa {
-    border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
   }
   
   .lineas_trabajo {
