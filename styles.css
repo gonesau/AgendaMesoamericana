@@ -4,6 +4,15 @@ body {
     padding: 0;
   }
   
+
+
+  #texto_intro{
+    font-size: 1em;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+  }
   .main_container {
     text-align: center;
   }
@@ -11,18 +20,18 @@ body {
   .agenda_meso {
     display: flex;
     justify-content: space-between;
-    margin: 20px auto;
-    max-width: 1200px; /* ajusta el valor según sea necesario */
+    margin: 2px auto;
+    max-width: 100%; /* ajusta el valor según sea necesario */
   }
   
-  .socioambiental,
-  .economico {
-    width: 25%;
+  #cuadro_socioambiental,
+  #cuadro_economico {
+    width: 50%; /* Cada cuadro utiliza el 50% del ancho del contenedor */
     box-sizing: border-box;
   }
   
   .mapa {
-    width: 50%;
+    width: 50%; /* El mapa utiliza el 50% del ancho del contenedor */
     box-sizing: border-box;
   }
   
@@ -31,40 +40,40 @@ body {
   .titulo_lineas,
   .lineas_trabajo,
   .conocer_mas {
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
   }
   
-  /* Alinea el contenido de las columnas al centro verticalmente */
-  .socioambiental,
-  .mapa,
-  .economico {
+  #cuadro_socioambiental,
+  #cuadro_economico,
+  .mapa {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  /* Espaciado entre las columnas */
-  .socioambiental {
-    margin-right: 10px;
+  #cuadro_socioambiental {
+    margin-right: 5px;
   }
   
-  .economico {
-    margin-left: 10px;
+  #cuadro_economico {
+    margin-left: 5px;
   }
   
-  /* Estilo adicional para resaltar las columnas */
-  .socioambiental,
-  .economico,
+  #cuadro_socioambiental,
+  #cuadro_economico,
   .mapa {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
     background-color: #f8f8f8;
   }
-
   
-
+  .lineas_trabajo {
+    white-space: pre-line;
+    text-align: left;
+    margin-left: 10px;
+  }
 
   /*Estilos mapa*/
   .mapa path {
