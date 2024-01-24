@@ -21,10 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Manejador de clic para los elementos <g>
     elementosG.forEach(function (elemento) {
       elemento.addEventListener("click", function () {
-        // Obtén la clase del elemento clicado
+        // Obtén la clase e ID del elemento clicado
         var clase = elemento.getAttribute("class");
+        var id = elemento.getAttribute("id");
 
-        // Determina el cuadro de detalles correspondiente según la clase
+        // Determina el cuadro de detalles correspondiente según la clase y el ID
         var cuadroId;
         if (clase.includes("socioambiental")) {
           cuadroId = "socioambiental";
@@ -33,11 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Obtén la información específica para el elemento clicado (sustituye estos valores según tu estructura)
-        var titulo = "Título de prueba para " + cuadroId;
-        var descripcion = "Descripción de prueba para " + cuadroId;
-        var tituloLineas = "Líneas de prueba para " + cuadroId;
+        var titulo = id.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase()); // Convierte el ID en un título con formato
+        var descripcion = "Descripción de prueba para " + cuadroId + " - " + id;
+        var tituloLineas = "Líneas de prueba para " + cuadroId + " - " + id;
         var lineasTrabajo = "• Línea 1\n• Línea 2\n• Línea 3";
-        var conocerMas = "Texto de prueba con link para " + cuadroId;
+        var conocerMas = "Texto de prueba con link para " + cuadroId + " - " + id;
 
         // Actualiza el contenido del cuadro detalles correspondiente
         actualizarCuadroDetalles(cuadroId, titulo, descripcion, tituloLineas, lineasTrabajo, conocerMas);
