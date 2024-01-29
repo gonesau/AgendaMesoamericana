@@ -46,8 +46,14 @@ body {
     box-sizing: border-box;
   }
   
+.titulo_linea_trabajo{
+  font-size: 1.8em;
+}
+
+
   .descripcion_eje{
     text-align: justify;
+    font-size: 1.1em;
   }
 
   #cuadro_informacion,

@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Actualiza el estilo del cuadro de información
       var cuadroInformacion = document.getElementById("cuadro_informacion");
-      cuadroInformacion.style.marginLeft = "10px";
+      cuadroInformacion.style.marginLeft = "8px";
       if (clase.includes("socioambiental")) {
-        cuadroInformacion.style.borderLeft = "5px solid orange";
+        cuadroInformacion.style.borderLeft = "8px solid orange";
       } else if (clase.includes("economico")) {
-        cuadroInformacion.style.borderLeft = "5px solid green";
+        cuadroInformacion.style.borderLeft = "8px solid #03B017";
       }
 
       // Obtén la información específica para el elemento clicado (sustituye estos valores según tu estructura)
