@@ -29,11 +29,24 @@ document.addEventListener("DOMContentLoaded", function () {
       var id = elemento.getAttribute("id");
 
       // Determina el cuadro de detalles correspondiente según la clase y el ID
-      var cuadroId;
+      var cuadroId = "economico";
       if (clase.includes("socioambiental")) {
         cuadroId = "economico";
+        document.querySelector(".titulo_linea_trabajo").textContent =
+          "Eje Socioambiental";
       } else if (clase.includes("economico")) {
         cuadroId = "economico";
+        document.querySelector(".titulo_linea_trabajo").textContent =
+          "Eje Económico";
+      }
+
+      // Actualiza el estilo del cuadro de información
+      var cuadroInformacion = document.getElementById("cuadro_informacion");
+      cuadroInformacion.style.marginLeft = "10px";
+      if (clase.includes("socioambiental")) {
+        cuadroInformacion.style.borderLeft = "5px solid orange";
+      } else if (clase.includes("economico")) {
+        cuadroInformacion.style.borderLeft = "5px solid green";
       }
 
       // Obtén la información específica para el elemento clicado (sustituye estos valores según tu estructura)

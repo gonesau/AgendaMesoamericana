@@ -26,14 +26,13 @@ body {
     max-width: 100%; /* ajusta el valor según sea necesario */
   }
   
-  #cuadro_socioambiental,
-  #cuadro_economico {
-    width: 50%; /* Cada cuadro utiliza el 50% del ancho del contenedor */
+  #cuadro_informacion {
+    width: 40%; /* Cada cuadro utiliza el 50% del ancho del contenedor */
     box-sizing: border-box;
   }
   
   .mapa {
-    width: 50%; /* El mapa utiliza el 50% del ancho del contenedor */
+    width: 60%; /* El mapa utiliza el 50% del ancho del contenedor */
     box-sizing: border-box;
     justify-content: center; /* Centrado verticalmente */
   }
@@ -47,26 +46,25 @@ body {
     box-sizing: border-box;
   }
   
-  #cuadro_socioambiental,
-  #cuadro_economico,
+  .descripcion_eje{
+    text-align: justify;
+  }
+
+  #cuadro_informacion,
   .mapa {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  #cuadro_socioambiental {
-    margin-right: 5px;
-    border-right: 1px solid #ccc;
-  }
+
   
-  #cuadro_economico {
+  #cuadro_informacion {
     margin-left: 5px;
     border-left: 1px solid #ccc;
   }
   
-  #cuadro_socioambiental,
-  #cuadro_economico,
+  #cuadro_informacion,
   .mapa {
     padding: 10px;
     border-radius: 5px;
@@ -101,13 +99,13 @@ body {
   }
 
   #cuadro_socioambiental,
-  #cuadro_economico,
+  #cuadro_informacion,
   .mapa {
     width: 100%; /* Utiliza el 100% del ancho en pantallas pequeñas */
   }
 
   #cuadro_socioambiental,
-  #cuadro_economico {
+  #cuadro_informacion {
     border-right: none; /* Elimina los bordes en móviles */
     border-left: none;
   }
