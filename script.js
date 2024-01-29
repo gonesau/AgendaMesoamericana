@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Determina el cuadro de detalles correspondiente según la clase y el ID
       var cuadroId;
       if (clase.includes("socioambiental")) {
-        cuadroId = "socioambiental";
+        cuadroId = "economico";
       } else if (clase.includes("economico")) {
         cuadroId = "economico";
       }
