@@ -15,7 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
       tituloLineas;
     document.getElementById("lineas_trabajo_" + cuadroId).textContent =
       lineasTrabajo;
-    document.getElementById("conocer_mas_" + cuadroId).innerHTML = conocerMas; // Usamos innerHTML para incluir el enlace
+    var conocerMasElement = document.getElementById("conocer_mas_" + cuadroId);
+    conocerMasElement.innerHTML = conocerMas; // Usamos innerHTML para incluir el enlace
+
+    // Agregar clase al párrafo para estilizar el botón
+    if (conocerMasElement.querySelector('a')) {
+      conocerMasElement.classList.add('boton-conocer-mas');
+    }
   }
 
   // Obtén todos los elementos <g>

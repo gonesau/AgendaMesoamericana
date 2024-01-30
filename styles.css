@@ -1,104 +1,149 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  .parrafo_intro {
-    width: 95%;
-    margin: 0 auto; /* Centra horizontalmente */
-  }
-  
-  #texto_intro {
-    text-align: justify;
-    font-weight:normal;
-  }
+.parrafo_intro {
+  width: 95%;
+  margin: 0 auto; /* Centra horizontalmente */
+}
 
-  .main_container {
-    text-align: center;
-  }
-  
-  .agenda_meso {
-    display: flex;
-    justify-content: space-between;
-    margin: 2px auto;
-    max-width: 100%; /* ajusta el valor según sea necesario */
-  }
-  
-  #cuadro_informacion {
-    width: 40%; /* Cada cuadro utiliza el 50% del ancho del contenedor */
-    box-sizing: border-box;
-  }
-  
-  .mapa {
-    width: 60%; /* El mapa utiliza el 50% del ancho del contenedor */
-    box-sizing: border-box;
-    justify-content: center; /* Centrado verticalmente */
-  }
-  
-  .titulo_eje,
-  .descripcion_eje,
-  .titulo_lineas,
-  .lineas_trabajo,
-  .conocer_mas {
-    width: 90%;
-    box-sizing: border-box;
-  }
-  
-.titulo_linea_trabajo{
+#texto_intro {
+  text-align: justify;
+  font-weight: normal;
+}
+
+.main_container {
+  text-align: center;
+}
+
+.agenda_meso {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px auto;
+  max-width: 100%; /* ajusta el valor según sea necesario */
+}
+
+#cuadro_informacion {
+  width: 50%; /* Cada cuadro utiliza el 50% del ancho del contenedor */
+  box-sizing: border-box;
+}
+
+.mapa {
+  width: 50%; /* El mapa utiliza el 50% del ancho del contenedor */
+  box-sizing: border-box;
+  justify-content: center; /* Centrado verticalmente */
+}
+
+.titulo_eje,
+.descripcion_eje,
+.titulo_lineas,
+.lineas_trabajo,
+.conocer_mas {
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.titulo_eje,
+.titulo_lineas,
+.titulo_linea_trabajo {
   font-size: 1.8em;
 }
 
 
-  .descripcion_eje{
-    text-align: justify;
-    font-size: 1.1em;
-  }
+.parrafo_intro,
+.lineas_trabajo,
+.descripcion_eje {
+  text-align: justify;
+  font-size: 1.4em;
+}
 
-  #cuadro_informacion,
-  .mapa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+.conocer_mas{
+  margin-top: 10px;
+  font-size: 1.3em;
+  text-align: center;
+}
 
-  
-  #cuadro_informacion {
-    margin-left: 5px;
-    border-left: 1px solid #ccc;
-  }
-  
-  #cuadro_informacion,
-  .mapa {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ffffff;
-  }
-  
-  .lineas_trabajo {
-    white-space: pre-line;
-    text-align: left;
-    margin-left: 10px;
-  }
 
-  /*Estilos mapa*/
-  .mapa path {
-    stroke-width: 0.5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .sector:hover,
-  .selected {
-    transform: scale(1.05);
-    z-index: 2;
-    transform-origin: 90% 50%;
-  }
-  
+#cuadro_informacion,
+.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  /* Media query para pantallas móviles */
+}
+
+#cuadro_informacion {
+  margin-left: 5px;
+  border-left: 1px solid #ccc;
+}
+
+#cuadro_informacion,
+.mapa {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.lineas_trabajo {
+  white-space: pre-line;
+  text-align: left;
+  margin-left: 10px;
+}
+
+/*Estilos mapa*/
+.mapa path {
+  stroke-width: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sector:hover,
+.selected {
+  transform: scale(1.05);
+  z-index: 2;
+  transform-origin: 90% 50%;
+}
+
+.boton-conocer-mas {
+  background-color: #0163be;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.boton-conocer-mas:hover {
+  background-color: #0061aa;
+}
+
+#conocer_mas_economico {
+  /* Estilo específico para el párrafo que contiene el botón */
+  display: inline-block;
+  margin-top: 10px; /* Ajusta el margen según sea necesario */
+}
+
+#conocer_mas_economico a {
+  /* Asegúrate de que el color del texto sea blanco para el enlace */
+  color: white;
+  text-decoration: none;
+}
+
+#conocer_mas_economico a:hover {
+  color: white; /* Ajusta el color del texto al pasar el ratón si es necesario */
+}
+
+
+
+
+
+
+/* Media query para pantallas móviles */
 @media only screen and (max-width: 900px) {
   .agenda_meso {
     flex-direction: column;
@@ -117,135 +162,393 @@ body {
   }
 }
 
-
-
-  .st0{fill:#FEFEFE;}
-  .st1{fill:#0068AE;}
-  .st2{fill:#006B4D;}
-  .st3{fill:#FBCC1D;}
-  .st4{fill:#84AFDB;}
-  .st5{fill:#006040;}
-  .st6{fill:#DF0009;}
-  .st7{fill:#CD002B;}
-  .st8{fill:#0061AA;}
-  .st9{fill:#A20125;}
-  .st10{fill:#79A54C;}
-  .st11{fill:#67ACE4;}
-  .st12{fill:#EBB801;}
-  .st13{fill:#590147;}
-  .st14{fill:#5F3D01;}
-  .st15{fill:#0163BE;}
-  .st16{fill:#CD0175;}
-  .st17{fill:#FD782D;}
-  .st18{fill:#EA8A00;}
-  .st19{fill:#03B017;}
-  .st20{fill:#04B118;}
-  .st21{fill:#1D110D;}
-  .st22{fill:#1C100C;}
-  .st23{fill:#83AFDB;}
-  .st24{fill:#1C110C;}
-  .st25{fill:#1B100C;}
-  .st26{fill:#1C110D;}
-  .st27{fill:#1D120D;}
-  .st28{fill:#1F130F;}
-  .st29{fill:#1E120E;}
-  .st30{fill:#1C100B;}
-  .st31{fill:#82AFDB;}
-  .st32{fill:#1E130F;}
-  .st33{fill:#130D0B;}
-  .st34{fill:#05603F;}
-  .st35{fill:#1D1A19;}
-  .st36{fill:#0F0908;}
-  .st37{fill:#181312;}
-  .st38{fill:#1B1817;}
-  .st39{fill:#171211;}
-  .st40{fill:#15100E;}
-  .st41{fill:#120D0C;}
-  .st42{fill:#120E0D;}
-  .st43{fill:#181211;}
-  .st44{fill:#221E1D;}
-  .st45{fill:#14100F;}
-  .st46{fill:#151110;}
-  .st47{fill:#181413;}
-  .st48{fill:#1C110E;}
-  .st49{fill:#1D1310;}
-  .st50{fill:#1A1312;}
-  .st51{fill:#140F0D;}
-  .st52{fill:#190D0A;}
-  .st53{fill:#0D0B0A;}
-  .st54{fill:#060505;}
-  .st55{fill:#020202;}
-  .st56{fill:#322F2E;}
-  .st57{fill:#FDFEFE;}
-  .st58{fill:#0268A8;}
-  .st59{fill:#FDFDFD;}
-  .st60{fill:#ECECEC;}
-  .st61{fill:#F7F7F7;}
-  .st62{fill:#F9F9F9;}
-  .st63{fill:#EEEDED;}
-  .st64{fill:#FAFAFA;}
-  .st65{fill:#FCFCFC;}
-  .st66{fill:#FBFBFB;}
-  .st67{fill:#A40629;}
-  .st68{fill:#79A54B;}
-  .st69{fill:#66ACE4;}
-  .st70{fill:#76B4E7;}
-  .st71{fill:#77B5E7;}
-  .st72{fill:#71B2E6;}
-  .st73{fill:#EBB803;}
-  .st74{fill:#EBB802;}
-  .st75{fill:#EDBE17;}
-  .st76{fill:#EBB804;}
-  .st77{fill:#EFC83B;}
-  .st78{fill:#ECBA0B;}
-  .st79{fill:#5F094D;}
-  .st80{fill:#590047;}
-  .st81{fill:#FCFBFC;}
-  .st82{fill:#5F094E;}
-  .st83{fill:#B994B2;}
-  .st84{fill:#5F3D00;}
-  .st85{fill:#65450B;}
-  .st86{fill:#66460C;}
-  .st87{fill:#644409;}
-  .st88{fill:#644308;}
-  .st89{fill:#634206;}
-  .st90{fill:#634207;}
-  .st91{fill:#634106;}
-  .st92{fill:#614004;}
-  .st93{fill:#6A4A12;}
-  .st94{fill:#694A11;}
-  .st95{fill:#6A4B12;}
-  .st96{fill:#66450B;}
-  .st97{fill:#65440A;}
-  .st98{fill:#66460B;}
-  .st99{fill:#65450A;}
-  .st100{fill:#0264BE;}
-  .st101{fill:#CE0175;}
-  .st102{fill:#FD7A30;}
-  .st103{fill:#FDAE81;}
-  .st104{fill:#FD8B4A;}
-  .st105{fill:#A20024;}
-  .st106{fill:#C35D74;}
-  .st107{fill:#D08092;}
-  .st108{fill:#CF7E90;}
-  .st109{fill:#D18293;}
-  .st110{fill:#D18394;}
-  .st111{fill:#D08192;}
-  .st112{fill:#D6E4C9;}
-  .st113{fill:#F6FAFD;}
-  .st114{fill:#F5F9FD;}
-  .st115{fill:#FEFDFD;}
-  .st116{fill:#E7DBE5;}
-  .st117{fill:#F9F6F8;}
-  .st118{fill:#F5F0F4;}
-  .st119{fill:#F8F6F8;}
-  .st120{fill:#F6F1F5;}
-  .st121{fill:#FEF4EF;}
-  .st122{fill:#FEFCFB;}
-  .st123{fill:#FEF6F1;}
-  .st124{fill:#FEF7F3;}
-  .st125{fill:#FEE3D3;}
-  .st126{fill:#FED3BA;}
-  .st127{fill:#FEDBC8;}
-  .st128{fill:#F7EBEE;}
-  .st129{fill:#F9EFF1;}
+.st0 {
+  fill: #fefefe;
+}
+.st1 {
+  fill: #0068ae;
+}
+.st2 {
+  fill: #006b4d;
+}
+.st3 {
+  fill: #fbcc1d;
+}
+.st4 {
+  fill: #84afdb;
+}
+.st5 {
+  fill: #006040;
+}
+.st6 {
+  fill: #df0009;
+}
+.st7 {
+  fill: #cd002b;
+}
+.st8 {
+  fill: #0061aa;
+}
+.st9 {
+  fill: #a20125;
+}
+.st10 {
+  fill: #79a54c;
+}
+.st11 {
+  fill: #67ace4;
+}
+.st12 {
+  fill: #ebb801;
+}
+.st13 {
+  fill: #590147;
+}
+.st14 {
+  fill: #5f3d01;
+}
+.st15 {
+  fill: #0163be;
+}
+.st16 {
+  fill: #cd0175;
+}
+.st17 {
+  fill: #fd782d;
+}
+.st18 {
+  fill: #ea8a00;
+}
+.st19 {
+  fill: #03b017;
+}
+.st20 {
+  fill: #04b118;
+}
+.st21 {
+  fill: #1d110d;
+}
+.st22 {
+  fill: #1c100c;
+}
+.st23 {
+  fill: #83afdb;
+}
+.st24 {
+  fill: #1c110c;
+}
+.st25 {
+  fill: #1b100c;
+}
+.st26 {
+  fill: #1c110d;
+}
+.st27 {
+  fill: #1d120d;
+}
+.st28 {
+  fill: #1f130f;
+}
+.st29 {
+  fill: #1e120e;
+}
+.st30 {
+  fill: #1c100b;
+}
+.st31 {
+  fill: #82afdb;
+}
+.st32 {
+  fill: #1e130f;
+}
+.st33 {
+  fill: #130d0b;
+}
+.st34 {
+  fill: #05603f;
+}
+.st35 {
+  fill: #1d1a19;
+}
+.st36 {
+  fill: #0f0908;
+}
+.st37 {
+  fill: #181312;
+}
+.st38 {
+  fill: #1b1817;
+}
+.st39 {
+  fill: #171211;
+}
+.st40 {
+  fill: #15100e;
+}
+.st41 {
+  fill: #120d0c;
+}
+.st42 {
+  fill: #120e0d;
+}
+.st43 {
+  fill: #181211;
+}
+.st44 {
+  fill: #221e1d;
+}
+.st45 {
+  fill: #14100f;
+}
+.st46 {
+  fill: #151110;
+}
+.st47 {
+  fill: #181413;
+}
+.st48 {
+  fill: #1c110e;
+}
+.st49 {
+  fill: #1d1310;
+}
+.st50 {
+  fill: #1a1312;
+}
+.st51 {
+  fill: #140f0d;
+}
+.st52 {
+  fill: #190d0a;
+}
+.st53 {
+  fill: #0d0b0a;
+}
+.st54 {
+  fill: #060505;
+}
+.st55 {
+  fill: #020202;
+}
+.st56 {
+  fill: #322f2e;
+}
+.st57 {
+  fill: #fdfefe;
+}
+.st58 {
+  fill: #0268a8;
+}
+.st59 {
+  fill: #fdfdfd;
+}
+.st60 {
+  fill: #ececec;
+}
+.st61 {
+  fill: #f7f7f7;
+}
+.st62 {
+  fill: #f9f9f9;
+}
+.st63 {
+  fill: #eeeded;
+}
+.st64 {
+  fill: #fafafa;
+}
+.st65 {
+  fill: #fcfcfc;
+}
+.st66 {
+  fill: #fbfbfb;
+}
+.st67 {
+  fill: #a40629;
+}
+.st68 {
+  fill: #79a54b;
+}
+.st69 {
+  fill: #66ace4;
+}
+.st70 {
+  fill: #76b4e7;
+}
+.st71 {
+  fill: #77b5e7;
+}
+.st72 {
+  fill: #71b2e6;
+}
+.st73 {
+  fill: #ebb803;
+}
+.st74 {
+  fill: #ebb802;
+}
+.st75 {
+  fill: #edbe17;
+}
+.st76 {
+  fill: #ebb804;
+}
+.st77 {
+  fill: #efc83b;
+}
+.st78 {
+  fill: #ecba0b;
+}
+.st79 {
+  fill: #5f094d;
+}
+.st80 {
+  fill: #590047;
+}
+.st81 {
+  fill: #fcfbfc;
+}
+.st82 {
+  fill: #5f094e;
+}
+.st83 {
+  fill: #b994b2;
+}
+.st84 {
+  fill: #5f3d00;
+}
+.st85 {
+  fill: #65450b;
+}
+.st86 {
+  fill: #66460c;
+}
+.st87 {
+  fill: #644409;
+}
+.st88 {
+  fill: #644308;
+}
+.st89 {
+  fill: #634206;
+}
+.st90 {
+  fill: #634207;
+}
+.st91 {
+  fill: #634106;
+}
+.st92 {
+  fill: #614004;
+}
+.st93 {
+  fill: #6a4a12;
+}
+.st94 {
+  fill: #694a11;
+}
+.st95 {
+  fill: #6a4b12;
+}
+.st96 {
+  fill: #66450b;
+}
+.st97 {
+  fill: #65440a;
+}
+.st98 {
+  fill: #66460b;
+}
+.st99 {
+  fill: #65450a;
+}
+.st100 {
+  fill: #0264be;
+}
+.st101 {
+  fill: #ce0175;
+}
+.st102 {
+  fill: #fd7a30;
+}
+.st103 {
+  fill: #fdae81;
+}
+.st104 {
+  fill: #fd8b4a;
+}
+.st105 {
+  fill: #a20024;
+}
+.st106 {
+  fill: #c35d74;
+}
+.st107 {
+  fill: #d08092;
+}
+.st108 {
+  fill: #cf7e90;
+}
+.st109 {
+  fill: #d18293;
+}
+.st110 {
+  fill: #d18394;
+}
+.st111 {
+  fill: #d08192;
+}
+.st112 {
+  fill: #d6e4c9;
+}
+.st113 {
+  fill: #f6fafd;
+}
+.st114 {
+  fill: #f5f9fd;
+}
+.st115 {
+  fill: #fefdfd;
+}
+.st116 {
+  fill: #e7dbe5;
+}
+.st117 {
+  fill: #f9f6f8;
+}
+.st118 {
+  fill: #f5f0f4;
+}
+.st119 {
+  fill: #f8f6f8;
+}
+.st120 {
+  fill: #f6f1f5;
+}
+.st121 {
+  fill: #fef4ef;
+}
+.st122 {
+  fill: #fefcfb;
+}
+.st123 {
+  fill: #fef6f1;
+}
+.st124 {
+  fill: #fef7f3;
+}
+.st125 {
+  fill: #fee3d3;
+}
+.st126 {
+  fill: #fed3ba;
+}
+.st127 {
+  fill: #fedbc8;
+}
+.st128 {
+  fill: #f7ebee;
+}
+.st129 {
+  fill: #f9eff1;
+}
