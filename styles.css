@@ -48,7 +48,7 @@ body {
 .titulo_eje,
 .titulo_lineas,
 .titulo_linea_trabajo {
-  font-size: 1.8em;
+  font-size: 1em;
 }
 
 
@@ -56,12 +56,12 @@ body {
 .lineas_trabajo,
 .descripcion_eje {
   text-align: justify;
-  font-size: 1.4em;
+  font-size: 0.9em;
 }
 
 .conocer_mas{
   margin-top: 10px;
-  font-size: 1.3em;
+  font-size: 0.8em;
   text-align: center;
 }
 
