@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tituloLineas: "Líneas de trabajo:",
             lineasTrabajo:
               "• Mesa Regulatoria Mesoamericana\n• Comunicación Social en Salud\n• Seguridad Vial en Mesoamérica\n• Fortalecimiento de capacidades nacionales y",
-            conocerMas: '<a href="LINK" target="_blank">Conoce más aquí</a>',
+            conocerMas: '<a href="http://proyectomesoamerica.org/index.php/ejes-de-trabajo/eje-social/salud" target="_blank">Conoce más aquí</a>',
           };
           break;
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tituloLineas: "Líneas de trabajo:",
             lineasTrabajo:
               "• Plan Director del Corredor Biológico Mesoamericano (CBM) 2030\n• Programa Mesoamericano de Educación Ambiental\n• Ciudades Sostenibles y Resilientes\n• Fortalecimiento de capacidades nacionales y regionales",
-            conocerMas: '<a href="LINK" target="_blank">Conoce más aquí</a>',
+            conocerMas: '<a href="http://proyectomesoamerica.org/index.php/ejes-de-trabajo/eje-social/medio-ambiente" target="_blank">Conoce más aquí</a>',
           };
           break;
 
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tituloLineas: "Líneas de trabajo:",
             lineasTrabajo:
               "• Red Mesoamericana para la Gestión Integral de Riesgos de Desastres (RMGIR)\n• Fortalecimiento de capacidades nacionales y regionales",
-            conocerMas: '<a href="LINK" target="_blank">Conoce más aquí</a>',
+            conocerMas: '<a href="http://proyectomesoamerica.org/index.php/ejes-de-trabajo/eje-social/gestion-de-riesgo" target="_blank">Conoce más aquí</a>',
           };
           break;
 
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tituloLineas: "Líneas de trabajo:",
             lineasTrabajo:
               "• Fortalecimiento de capacidades nacionales y regionales",
-            conocerMas: '<a href="LINK" target="_blank">Conoce más aquí</a>',
+            conocerMas: '<a href="http://proyectomesoamerica.org/index.php/ejes-de-trabajo/eje-social/vivienda" target="_blank">Conoce más aquí</a>',
           };
           break;
 
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
               "Fortalecer las acciones regionales en seguridad alimentaria y nutricional con la finalidad de avanzar hacia la erradicación del hambre en Mesoamérica, mediante el desarrollo de marcos normativos y políticas públicas multisectoriales, a través de iniciativas como el programa Mesoamérica sin Hambre AMEXCID-FAO.",
             tituloLineas: "Líneas de trabajo:",
             lineasTrabajo: "• Programa Mesoamérica sin Hambre AMEXCID-FAO",
-            conocerMas: '<a href="LINK" target="_blank">Conoce más aquí</a>',
+            conocerMas: '<a href="http://proyectomesoamerica.org/index.php/ejes-de-trabajo/eje-social/seguridad-alimentaria-y-nutricional" target="_blank">Conoce más aquí</a>',
           };
           break;
 
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tituloLineas: "Líneas de trabajo:",
             lineasTrabajo:
               "• Agenda Mesoamericana de Transporte Movilidad y Logística (AMTML)\n• Plan de Acción Regional de Transporte Marítimo de Corta Distancia (PAR TMCD)",
-            conocerMas: '<a href="LINK" target="_blank">Conoce más aquí</a>',
+            conocerMas: '<a href="http://proyectomesoamerica.org/index.php/ejes-de-trabajo/eje-economico/transporte" target="_blank">Conoce más aquí</a>',
           };
           break;
 
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tituloLineas: "Líneas de trabajo:",
             lineasTrabajo:
               "• Facilitación Comercial y Competitividad\n• Agenda Mesoamericana de Fomento de las Mipymes",
-            conocerMas: '<a href="LINK" target="_blank">Conoce más aquí</a>',
+            conocerMas: '<a href="http://proyectomesoamerica.org/index.php/ejes-de-trabajo/eje-economico/facilitacion-comercial-y-competividad" target="_blank">Conoce más aquí</a>',
           };
           break;
 
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tituloLineas: "Líneas de trabajo:",
             lineasTrabajo:
               "• Biocombustibles\n• Eficiencia energética\n• Interconexión eléctrica\n• Electromovilidad",
-            conocerMas: '<a href="LINK" target="_blank">Conoce más aquí</a>',
+            conocerMas: '<a href="http://proyectomesoamerica.org/index.php/ejes-de-trabajo/eje-economico/energia" target="_blank">Conoce más aquí</a>',
           };
           break;
 
@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tituloLineas: "Líneas de trabajo:",
             lineasTrabajo:
               "• Infraestructura digital\n• Fortalecimiento de capacidades\n• Economía digital\n• Seguridad digital\n• Gobierno digital",
-            conocerMas: '<a href="LINK" target="_blank">Conoce más aquí</a>',
+            conocerMas: '<a href="http://proyectomesoamerica.org/index.php/ejes-de-trabajo/eje-economico/telecomunicaciones" target="_blank">Conoce más aquí</a>',
           };
           break;
 
