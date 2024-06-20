@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Mesoamericana</title>
+    <style>
+      /* Reset de márgenes y paddings */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      .main_container {
+        padding: 20px;
+      }
+
+      .parrafo_intro {
+        margin-bottom: 20px;
+      }
+
+      .agenda_meso {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .centrar-imagen {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Diseño responsivo */
+      @media (max-width: 600px) {
+        .parrafo_intro {
+          padding: 10px;
+        }
+
+        .centrar-imagen {
+          width: 100%;
+        }
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section class="main_container">
+      <div class="parrafo_intro">
+        <p id="texto_intro">
+          El Proyecto Mesoamérica basa el trabajo coordinado de sus Prioridades
+          Regionales bajo las áreas socioambiental y económica, para facilitar
+          la concertación, el diálogo, la cooperación, la proyección
+          internacional e instrumentación de Bienes Públicos Regionales y así
+          contribuir al desarrollo integral, sostenible, inclusivo y resiliente
+          de nuestros países.
+
+          <br />
+          Agenda Mesoamericana también alinea su implementación con los
+          Objetivos de Desarrollo Sostenible de la Agenda 2030 para contribuir a
+          la prosperidad de los habitantes de la región.
+        </p>
+      </div>
+      <section class="agenda_meso">
+        <a href="http://proyectomesoamerica.org/index.php/ejes-de-trabajo" class="boton">
+            <img src="img/Ejes.png" alt="Mapa" class="centrar-imagen" />
+        </a>
+      </section>
+    </section>
+  </body>
+</html>
+
